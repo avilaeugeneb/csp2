@@ -1,3 +1,5 @@
+</div> <!-- end.grid.nopad -->
+
 <!--Footer-->
 <footer class="page-footer font-small pt-4 mt-4">
 

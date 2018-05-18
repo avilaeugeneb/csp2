@@ -253,7 +253,7 @@ $(document).ready(function(){
 		});
  	});
  	/*
- 	 * Cart Checkout Buttons
+ 	 * Cart Buttons
  	 */
 
  	$('button.logincart').on('click',function(){
@@ -268,9 +268,36 @@ $(document).ready(function(){
  		window.location.href = './checkout.php#mainnav';
  	});
 
+
  	/*
  	 * Delete Item on cart
  	 */
+ 	$('i.deletecartitem').on('click',function(){
+ 		var id = $(this).parent().parent().data('productid');
+ 		var container = $(this).parent().parent();
+ 		var qty = 0;
+ 		container.hide();
+
+ 		$.ajax({
+ 			url:'./lib/deletefromcart.php',
+ 			method:'POST',
+ 			data:{"id":id,"qty":qty}
+ 		}).done(function(data){
+ 			$('span.deletemessage').show();
+ 			$('span.deletemessage').html(data);
+ 			$('span.deletemessage').fadeOut(2500);
+ 		});
+
+ 		$.ajax({
+ 			url:'./lib/addtocart.php',
+ 			method:'POST',
+ 			data:{"pid":id,"quantity":qty}
+ 		}).done(function(data){
+ 			$('span.totalprice').html(data);
+ 			$('.totalpricebot').html(data);
+ 		});
+ 	});
+
 });
 
 // Checks if string is empty, return true if empty

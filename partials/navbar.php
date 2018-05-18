@@ -13,7 +13,7 @@
 
             <li class="nav-item partner-links">
 
-                <a class="nav-link partner-links" href="#">Pure Trek</a>
+                <a class="nav-link partner-links" href="#">Pure Scents</a>
             </li>
             <li class="nav-item partner-links">
 
@@ -38,11 +38,11 @@
     <!-- Links -->
     <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-            <a class="nav-link" href="./home.php#mainnav">Home</a>
+            <a class="nav-link" href="./home.php#mainnav">PureFood Home</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
             <a class="nav-link" href="./about.php#mainnav">About</a>
-        </li>
+        </li> -->
         <li class="nav-item">
             <a class="nav-link" href="./catalog.php#mainnav">Products</a>
         </li>

@@ -29,6 +29,7 @@ require_once './partials/heading.php';
 				<h2>Your Cart</h2>
 				<p><a href="./catalog.php#mainnav">&#8592;Back to shopping</a></p>
 			</div>
+			<span class="deletemessage"></span>
 			<div class="grid cartheader">
 				<h4>Product</h4>
 				<h4>Quantity</h4>
@@ -43,7 +44,7 @@ require_once './partials/heading.php';
 					<div class="editqty">
 						<input class="editinputqty" type="number" name="qtyproduct" value="<?= $_SESSION['cart'][$products['id']] ?>">	
 						<i class="fa fa-pencil" aria-hidden="true"></i>
-						<i class="fa fa-trash" aria-hidden="true"></i>
+						<i class="deletecartitem fa fa-trash" aria-hidden="true"></i>
 					</div>
 					<p class="unitprice" data-unitprice="<?= $products['pPrice'] ?>"><?= "₱".$products['pPrice'] ?></p>
 					<p class="subprice"><?= "₱".$products['pPrice'] * $_SESSION['cart'][$products['id']] ?></p>

@@ -31,6 +31,12 @@
 	box-sizing: border-box;
 }
 
+body{
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
 h1,h2,h3,h4,h5,h6,p.h4{
 	text-transform: capitalize;
 	font-weight: bold;
@@ -79,6 +85,11 @@ a{
 	padding: var(--vh);
 }
 
+.grid.nopad{
+	padding: 0;
+	margin: 0;
+}
+
 .grid.page-header{
 	place-items: center;
 	padding: var(--vh);
@@ -112,10 +123,10 @@ nav#mainnav{
 *
 */
 
-main.content {
-	min-height: calc(var(--vh)*120);
+/*main.content {
+	min-height: calc(100vh - 200px);
 }
-
+*/
 
 /*
 *
@@ -330,13 +341,6 @@ span.totalprice{
 		position: relative;
 	}
 
-		.formdeliver{
-			position: fixed;
-			top: 15%;
-			right: 5%;
-			z-index: 100;
-		}
-
 .form-control {
 	font-weight: bold;
 	padding: calc(var(--vh)*2);
@@ -393,5 +397,7 @@ span.profilespan{
  */
 footer.page-footer{
 	background: var(--theme-color);
+	grid-row-start: 2;
+	grid-row-end: 3;
 }
 

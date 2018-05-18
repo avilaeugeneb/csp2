@@ -29,30 +29,30 @@ $userinfo = mysqli_fetch_assoc($result_user);
 			<div class="grid userdetail">
 				<h5 class="grid">First Name:</h5>
 				<input type="text" name="userFirstName" value="<?= $userinfo['userFirstName']; ?>" readonly class="form-control nice-border" placeholder="Click the pencil to edit" id="userFirstNameinput">
-				<button type="button" class="btn btn-outline-brown waves-effect userFirstNamebtn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+				<button type="button" class="btn waves-effect userFirstNamebtn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
 			</div>
 			<div class="grid userdetail">
 				<h5 class="grid">Last Name:</h5>
 				<input type="text" name="userLastName" value="<?= $userinfo['userLastName']; ?>" readonly class="form-control nice-border" placeholder="Click the pencil to edit"
 					id="userLastNameinput">
-				<button type="button" class="btn btn-outline-brown waves-effect userLastNamebtn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+				<button type="button" class="btn waves-effect userLastNamebtn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
 			</div>
 			<div class="grid userdetail">
 				<h5 class="grid">Email:</h5>
 				<input type="email" name="userEmail" value="<?= $userinfo['userEmail']; ?>" readonly class="form-control nice-border" placeholder="Click the pencil to edit" id="userEmailinput">
-				<button type="button" class="btn btn-outline-brown waves-effect userEmailbtn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+				<button type="button" class="btn waves-effect userEmailbtn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
 			</div>
 			<div class="grid userdetail">
 				<h5 class="grid">City:</h5>
 				<input type="text" name="userCity" value="<?= $userinfo['userCity']; ?>" readonly class="form-control nice-border" placeholder="Click the pencil to edit" id="userCityinput">
-				<button type="button" class="btn btn-outline-brown waves-effect userCitybtn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+				<button type="button" class="btn waves-effect userCitybtn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
 			</div>
 		</div>
 
 		<div class="grid buttons">
 		<button type="button" class="btn btn-outline-danger waves-effect deactivate" data-toggle="modal" data-target="#deactivate-account">Deactivate</button> 
 
-		<button type="button" class="btn btn-outline-brown waves-effect profilesave">Save</button>
+		<button type="button" class="btn waves-effect profilesave">Save</button>
 		</div>
 
 	</div> 
